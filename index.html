@@ -2,112 +2,98 @@
 
 <html lang="en">
 
-<head>
+  <head>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
     <div class="container">
 
-        <div class="header">
+      <div class="calculator">
 
-            <div class="search-box">
+        <input type="text" id="inputBox" placeholder="0" />
 
-                <input type="text" placeholder="Enter your location" class="input-box">
+        <div>
 
+          <button class="button operator">AC</button>
 
+          <button class="button operator">DEL</button>
 
-                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+          <button class="button operator">%</button>
 
-            </div>
+          <button class="button operator">/</button>
+
+        </div>
+
+        <div>
+
+          <button class="button">7</button>
+
+          <button class="button">8</button>
+
+          <button class="button">9</button>
+
+          <button class="button operator">*</button>
+
+        </div>
+
+        <div>
+
+          <button class="button">4</button>
+
+          <button class="button">5</button>
+
+          <button class="button">6</button>
+
+          <button class="button operator">-</button>
+
+        </div>
+
+        <div>
+
+          <button class="button">1</button>
+
+          <button class="button">2</button>
+
+          <button class="button">3</button>
+
+          <button class="button operator">+</button>
 
         </div>
 
 
 
-        <div class="location-not-found">
+        <div>
 
-            <h1>Sorry, Location not found!!!</h1>
+          <button class="button">00</button>
 
-            <img src="/assets/404.png" alt="404 Error">
+          <button class="button">0</button>
 
-        </div>
+          <button class="button">.</button>
 
-
-
-        <div class="weather-body">
-
-            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
-
-
-
-            <div class="weather-box">
-
-                <p class="temperature">0 <sup>°C</sup></p>
-
-                <p class="description">light rain</p>
-
-            </div>
-
-
-
-            <div class="weather-details">
-
-                <div class="humidity">
-
-                    <i class="fa-sharp fa-solid fa-droplet"></i>
-
-                    <div class="text">
-
-                        <span id="humidity">45%</span>
-
-                        <p>Humidity</p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="wind">
-
-                    <i class="fa-solid fa-wind"></i>
-
-                    <div class="text">
-
-                        <span id="wind-speed">12Km/H</span>
-
-                        <p>Wind Speed</p>
-
-                    </div>
-
-                </div>
-
-            </div>
+          <button class="button equalBtn">=</button>
 
         </div>
+
+      </div>
 
     </div>
 
 
 
-
-
     <script src="script.js"></script>
 
-    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+  </body>
 
-</body>
-
-		</html>
+					  </html>
